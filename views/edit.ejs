@@ -7,9 +7,9 @@
     <title>Monsters</title>
 </head>
 <body>
-    <h1>Monsters New Page</h1>
+    <h1>Monsters Edit Page</h1>
   
-    <form action="/monsters" method="POST">Create new monster</form>  <!--the request will be submitted here, post adds on to the list of monsters-->
+    <form action="/monsters/<%=monster._id%>?_method=PUT" method="POST">Edit Monsters</form>  <!--the request will be submitted here, post adds on to the list of monsters-->
     <input type="text" name="name"> <br>
     <input type="text" name="color"> <br>
     <input type="submit" value="Submit">
